@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "blog in html, js and bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "bootstrap": "*",
+    "font-awesome": "*",
+    "jquery": "*",
+    "scrollmagic": "^2.0.5"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "waldir bertuqui",
+  "license": "ISC"
+}

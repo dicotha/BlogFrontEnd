@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CineBlog</title>
+	<link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../node_modules/animate.css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/Sidebar.css">
+</head>
+<body id="page-content-wrapper">
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top nav-top">
+		  <a class="" id="menu-toggle" href="#"><i class="fa fa-bars burger" aria-hidden="true"></i></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <img class="logo img-fluid" src="img/CineBlog.png">
+		</nav>
+	</header>
+
+
+	<main>
+
+		<div class="wrapper">
+
+	        <!-- Sidebar -->
+	        <div id="sidebar-wrapper">
+	            <div class="closeBtn">
+	            	<img src="img/close.png">
+	            </div>
+	        	<div class="menuTitle">
+	        		Menu
+	        	</div>
+
+
+	            <ul class="sidebar-nav">
+	                <li>
+	                    <a href="#">Reviews</a>
+	                </li>
+	                <li>
+	                    <a href="#">Trailers</a>
+	                </li>
+	                <li>
+	                    <a href="#">Posters</a>
+	                </li>
+	                <li>
+	                    <a href="#">Interviews</a>
+	                </li>
+	                <li>
+	                    <a href="#">Features</a>
+	                </li>
+
+	               <li class="searchBar">
+	               	<input type="text" name=""	>
+	               </li>
+	            </ul>
+	        </div>
+	        <!-- /#sidebar-wrapper -->
+
+
+
+	        <!-- home -->
+	        <div id="home" class="">
+				<div id="background-carousel">
+				    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+				      <div class="carousel-inner">
+				      	<div class="carousel-item carousel active ">
+				        	<img src="img/Movie-making4.jpg" class="img-fluid" >
+				        	<div class=" caption-Text ">
+							    <h5>Movies</h5>
+						  	</div>
+				      	</div>
+				      	<div class="carousel-item carousel">
+				        	<img src="img/o-destino.jpg" class="img-fluid" >
+				        	<div class=" caption-Text ">
+							    <h5>Darkest Hour</h5>
+						  	</div>
+				      	</div>
+				      	<div class="carousel-item carousel">
+				        	<img src="img/star_wars_the_last_jedi_hd_2017-HD.jpg" class="img-fluid" >
+				        	<div class=" caption-Text ">
+							    <h5>Star Wars <br>Last Jedi</h5>
+						  	</div>
+				      	</div>
+				      </div>
+				    </div>
+				</div>
+
+				<div class="socialHome">
+					<div class="faceBookHome">
+						<img src="img/if_circle-facebook__317752.png">
+					</div>
+					<div class="twitterHome">
+						<img src="img/if_twitter_317720.png">
+					</div>
+				</div>
+
+				<div class="scrollDownHome" id="firt-div">
+					<a href="#postArea">
+						<img src="img/mouse.png">
+					</a>
+				</div>
+	        </div>
+			<!-- end home -->
+
+
+			<!-- Post Area -->
+			<div id="postArea" >
+				<div class="container-fluid">
+						<!-- top news -->
+						<div class="row">
+							<div class="col-12">
+								<h1 class="titlePost">Top News</h1>	
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-12">
+								<div class="row">
+									<div class="col-6">
+										<img src="img/postArea/big_square.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<div class="">
+											<div class="row">
+												<div class="col-12">
+													<img src="img/postArea/post_1.png" class="minithumbSlide img-fluid">
+													<img src="img/postArea/post_2.png" class="minithumbSlide img-fluid">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12">
+													<img src="img/postArea/post_3.png" class="minithumbSlide img-fluid">
+													<img src="img/postArea/post_4.png" class="minithumbSlide img-fluid">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Top news -->
+						<div class="row">
+							<!-- Last news -->
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6">
+										<h1 class="titlePost">Last News</h1>
+									</div>
+									<div class="col-md-6">
+										<div>Comments</div>
+									</div>
+								</div>
+							</div>
+							<!-- end Last news -->
+						</div>
+				</div>
+			</div> 
+			<!-- end Post Area -->
+
+			
+		</div>
+		
+
+
+
+		 
+		
+	</main>
+
+
+
+
+
+
+
+	<script src="../node_modules/jquery/dist/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	
+
+	<script src="js/carouselHome.js"></script>
+	<script src="js/sidebarHome.js"></script>
+
+	<script>
+		/*$(document).ready(function(){
+		  // Add scrollspy to <body>
+		  $('body').scrollspy({target: "#home", offset: 200});   
+
+		  // Add smooth scrolling on all links inside the navbar
+		  $("#myNavbar a").on('click', function(event) {
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    }  // End if
+		  });
+		});*/
+	</script>
+
+</body>
+</html>
+
