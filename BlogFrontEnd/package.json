@@ -11,7 +11,9 @@
     "bootstrap": "*",
     "font-awesome": "*",
     "jquery": "*",
-    "scrollmagic": "^2.0.5"
+    "rellax": "^1.5.1",
+    "scrollmagic": "^2.0.5",
+    "popper.js":"^1.12.9"
   },
   "keywords": [
     "blog"

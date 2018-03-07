@@ -1,9 +1,14 @@
 /*mouse button*/
 $("div").scroll2Section({
 			  menu:'.scrollDownHome',
-			 offsetTop:90
+			 offsetTop:55
 
 		});
+$("div").scroll2Section({
+        menu:'.btnGotoTop',
+       offsetTop:0
+
+    });
 /*end*/
 
 
@@ -30,6 +35,11 @@ var scrollTop = 0;
       /*end*/
 
       /*show menu in top*/
+      $(".btnGotoTop").addClass('animated fadeInDown').show();
+      $('.btnGotoTop').removeClass('fadeOut');
+      /*end*/
+
+      /*show menu in top*/
       $(".menuTop").addClass('animated fadeInDown').show();
       $('.menuTop').removeClass('fadeOut');
       /*end*/
@@ -49,6 +59,11 @@ var scrollTop = 0;
       /*hide menu in top*/
       $('.menuTop').removeClass('fadeInDown');
       $('.menuTop').addClass('fadeOut');
+      /*end */
+
+      /*hide btn go to top*/
+      $('.btnGotoTop').removeClass('fadeInDown');
+      $('.btnGotoTop').addClass('fadeOut');
       /*end */
 
 
