@@ -81,9 +81,17 @@ blockquote{
     .social-btns li {
         margin: 15px;
     }
+    .img-post {
+        height: 224px;
+    }
 }
 
+@media (min-width: 375px) {
 
+    .img-post {
+        height: 224px;
+    }
+}
 
 /* Parting Button */
 .social-btn-part {
